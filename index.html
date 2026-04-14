@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI NormaCS</title>
+  <meta name="description" content="AI NormaCS: ответы по нормативке в формате диалога.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="bg-grid"></div>
+
+  <main class="page">
+    <header class="top">
+      <div class="brand-box">
+        <div class="brand-ai">AI</div>
+        <div class="brand-pill" aria-hidden="true">
+          <span class="pill-left"></span>
+          <span class="pill-right"></span>
+        </div>
+        <div class="brand-text">
+          <p class="brand-main">NORMA<span>CS</span></p>
+          <p class="brand-sub">СИСТЕМА НОРМАТИВОВ</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Ответы по нормативке в формате диалога</h1>
+        <p class="lead">
+          Задайте свой вопрос - система AI+NormaCS проведет исследование, найдет точный ответ и предоставит ссылки на использованные источники.
+        </p>
+        <div class="queue-strip">
+          <span class="queue-label">Очередь сейчас:</span>
+          <span class="queue-item live" id="queueRunning">0 выполняется</span>
+          <span class="queue-item" id="queueWaiting">0 ожидают</span>
+          <span class="queue-item" id="queuePosition">Позиция: -</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="chat-zone">
+      <div class="locked-shell" id="authPanel">
+        <p class="locked-kicker">Доступ к чату</p>
+        <h2>AI NormaCS Chat откроется после авторизации</h2>
+        <p class="locked-lead">
+          Введите логин и пароль, чтобы открыть чат и отправлять вопросы.
+        </p>
+        <form class="auth-form" id="loginForm">
+          <label class="sr-only" for="loginInput">Логин</label>
+          <input id="loginInput" type="text" placeholder="Логин" autocomplete="username" required>
+          <label class="sr-only" for="passwordInput">Пароль</label>
+          <input id="passwordInput" type="password" placeholder="Введите пароль" autocomplete="current-password" required>
+          <button class="cta-primary" type="submit" id="loginButton">Авторизоваться</button>
+        </form>
+        <p class="auth-note" id="authNote"></p>
+      </div>
+
+      <div class="chat-shell hidden" id="chatPanel">
+        <div class="chat-head">
+          <p>AI NormaCS Chat</p>
+          <button class="small-btn" type="button" id="logoutButton">Выйти</button>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+          <article class="msg agent">
+            <p class="author">AI NormaCS</p>
+            <p>Авторизация успешна. Можете отправить вопрос.</p>
+          </article>
+        </div>
+
+        <div class="task-strip">
+          <span id="taskStatus">Статус задачи: Ожидание вопроса.</span>
+          <button class="small-btn danger hidden" type="button" id="cancelTaskButton">Остановить</button>
+        </div>
+
+        <div class="system-strip">
+          <span id="systemStatus">Система: ожидание подключения.</span>
+        </div>
+
+        <form class="chat-input" id="chatForm">
+          <label class="sr-only" for="questionInput">Вопрос</label>
+          <input id="questionInput" type="text" placeholder="Введите вопрос..." maxlength="1000" required>
+          <button type="submit" id="sendButton">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="dev-footer">
+    <p>Разработчик Никифоров Н.С.</p>
+    <p>Контакты для связи @witerpain / tom_yinkes@inbox.ru</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
