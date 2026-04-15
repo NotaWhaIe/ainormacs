@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI NormaCS</title>
-  <meta name="description" content="AI NormaCS: РѕС‚РІРµС‚С‹ РїРѕ РЅРѕСЂРјР°С‚РёРІРєРµ РІ С„РѕСЂРјР°С‚Рµ РґРёР°Р»РѕРіР°.">
+  <meta name="description" content="AI NormaCS: ответы по нормативке в формате диалога.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -25,39 +25,39 @@
         </div>
         <div class="brand-text">
           <p class="brand-main">NORMA<span>CS</span></p>
-          <p class="brand-sub">РЎРРЎРўР•РњРђ РќРћР РњРђРўРР’РћР’</p>
+          <p class="brand-sub">СИСТЕМА НОРМАТИВОВ</p>
         </div>
       </div>
     </header>
 
     <section class="hero">
       <div class="hero-copy">
-        <h1>РћС‚РІРµС‚С‹ РїРѕ РЅРѕСЂРјР°С‚РёРІРєРµ РІ С„РѕСЂРјР°С‚Рµ РґРёР°Р»РѕРіР°</h1>
+        <h1>Ответы по нормативке в формате диалога</h1>
         <p class="lead">
-          Р—Р°РґР°Р№С‚Рµ СЃРІРѕР№ РІРѕРїСЂРѕСЃ - СЃРёСЃС‚РµРјР° AI+NormaCS РїСЂРѕРІРµРґРµС‚ РёСЃСЃР»РµРґРѕРІР°РЅРёРµ, РЅР°Р№РґРµС‚ С‚РѕС‡РЅС‹Р№ РѕС‚РІРµС‚ Рё РїСЂРµРґРѕСЃС‚Р°РІРёС‚ СЃСЃС‹Р»РєРё РЅР° РёСЃРїРѕР»СЊР·РѕРІР°РЅРЅС‹Рµ РёСЃС‚РѕС‡РЅРёРєРё.
+          Задайте свой вопрос — система AI+NormaCS проведёт исследование, найдёт точный ответ и предоставит ссылки на использованные источники.
         </p>
         <div class="queue-strip">
-          <span class="queue-label">РћС‡РµСЂРµРґСЊ СЃРµР№С‡Р°СЃ:</span>
-          <span class="queue-item live" id="queueRunning">0 РІС‹РїРѕР»РЅСЏРµС‚СЃСЏ</span>
-          <span class="queue-item" id="queueWaiting">0 РѕР¶РёРґР°СЋС‚</span>
-          <span class="queue-item" id="queuePosition">РџРѕР·РёС†РёСЏ: -</span>
+          <span class="queue-label">Очередь сейчас:</span>
+          <span class="queue-item live" id="queueRunning">0 выполняется</span>
+          <span class="queue-item" id="queueWaiting">0 ожидают</span>
+          <span class="queue-item" id="queuePosition">Позиция: -</span>
         </div>
       </div>
     </section>
 
     <section class="chat-zone">
       <div class="locked-shell" id="authPanel">
-        <p class="locked-kicker">Р”РѕСЃС‚СѓРї Рє С‡Р°С‚Сѓ</p>
-        <h2>AI NormaCS Chat РѕС‚РєСЂРѕРµС‚СЃСЏ РїРѕСЃР»Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё</h2>
+        <p class="locked-kicker">Доступ к чату</p>
+        <h2>AI NormaCS Chat откроется после авторизации</h2>
         <p class="locked-lead">
-          Р’РІРµРґРёС‚Рµ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ, С‡С‚РѕР±С‹ РѕС‚РєСЂС‹С‚СЊ С‡Р°С‚ Рё РѕС‚РїСЂР°РІР»СЏС‚СЊ РІРѕРїСЂРѕСЃС‹.
+          Введите логин и пароль, чтобы открыть чат и отправлять вопросы.
         </p>
         <form class="auth-form" id="loginForm">
-          <label class="sr-only" for="loginInput">Р›РѕРіРёРЅ</label>
-          <input id="loginInput" type="text" placeholder="Р›РѕРіРёРЅ" autocomplete="username" required>
-          <label class="sr-only" for="passwordInput">РџР°СЂРѕР»СЊ</label>
-          <input id="passwordInput" type="password" placeholder="Р’РІРµРґРёС‚Рµ РїР°СЂРѕР»СЊ" autocomplete="current-password" required>
-          <button class="cta-primary" type="submit" id="loginButton">РђРІС‚РѕСЂРёР·РѕРІР°С‚СЊСЃСЏ</button>
+          <label class="sr-only" for="loginInput">Логин</label>
+          <input id="loginInput" type="text" placeholder="Логин" autocomplete="username" required>
+          <label class="sr-only" for="passwordInput">Пароль</label>
+          <input id="passwordInput" type="password" placeholder="Введите пароль" autocomplete="current-password" required>
+          <button class="cta-primary" type="submit" id="loginButton">Авторизоваться</button>
         </form>
         <p class="auth-note" id="authNote"></p>
       </div>
@@ -65,41 +65,40 @@
       <div class="chat-shell hidden" id="chatPanel">
         <div class="chat-head">
           <p>AI NormaCS Chat</p>
-          <button class="small-btn" type="button" id="logoutButton">Р’С‹Р№С‚Рё</button>
+          <button class="small-btn" type="button" id="logoutButton">Выйти</button>
         </div>
 
         <div class="chat-body" id="chatBody">
           <article class="msg agent">
             <p class="author">AI NormaCS</p>
-            <p>РђРІС‚РѕСЂРёР·Р°С†РёСЏ СѓСЃРїРµС€РЅР°. РњРѕР¶РµС‚Рµ РѕС‚РїСЂР°РІРёС‚СЊ РІРѕРїСЂРѕСЃ.</p>
+            <p>Авторизация успешна. Можете задать вопрос.</p>
           </article>
         </div>
 
         <div class="task-strip">
-          <span id="taskStatus">РЎС‚Р°С‚СѓСЃ Р·Р°РґР°С‡Рё: РћР¶РёРґР°РЅРёРµ РІРѕРїСЂРѕСЃР°.</span>
-          <button class="small-btn danger hidden" type="button" id="cancelTaskButton">РћСЃС‚Р°РЅРѕРІРёС‚СЊ</button>
+          <span id="taskStatus">Статус задачи: Ожидание вопроса.</span>
+          <button class="small-btn danger hidden" type="button" id="cancelTaskButton">Остановить</button>
         </div>
 
         <div class="system-strip">
-          <span id="systemStatus">РЎРёСЃС‚РµРјР°: РѕР¶РёРґР°РЅРёРµ РїРѕРґРєР»СЋС‡РµРЅРёСЏ.</span>
+          <span id="systemStatus">Система: ожидание подключения.</span>
         </div>
 
         <form class="chat-input" id="chatForm">
-          <label class="sr-only" for="questionInput">Р’РѕРїСЂРѕСЃ</label>
-          <input id="questionInput" type="text" placeholder="Р’РІРµРґРёС‚Рµ РІРѕРїСЂРѕСЃ..." maxlength="1000" required>
-          <button type="submit" id="sendButton">РћС‚РїСЂР°РІРёС‚СЊ</button>
+          <label class="sr-only" for="questionInput">Вопрос</label>
+          <input id="questionInput" type="text" placeholder="Введите вопрос..." maxlength="1000" required>
+          <button type="submit" id="sendButton">Отправить</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="dev-footer">
-    <p>Р Р°Р·СЂР°Р±РѕС‚С‡РёРє РќРёРєРёС„РѕСЂРѕРІ Рќ.РЎ.</p>
-    <p>РљРѕРЅС‚Р°РєС‚С‹ РґР»СЏ СЃРІСЏР·Рё tom_yinkes@inbox.ru</p>
+    <p>Разработчик Никифоров Н.С.</p>
+    <p>Контакты для связи tom_yinkes@inbox.ru</p>
   </footer>
 
   <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
-
